@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Update Contact"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Name:"/>
+
+                <EditText
+                        android:id="@+id/nameInputField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Enter Name"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Number:"/>
+
+                <EditText
+                        android:id="@+id/numberInputField"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:hint="Enter Phone Number"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                        android:id="@+id/confirmUpdateButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:textColor="@android:color/holo_red_light"
+                        android:background="@android:color/white"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/closeDialogButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"/>
+
+        </LinearLayout>
+
+</LinearLayout>
