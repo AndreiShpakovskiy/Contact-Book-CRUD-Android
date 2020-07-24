@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.shpakovskiy.contactbook.MainActivity
 import com.shpakovskiy.contactbook.R
@@ -27,6 +28,12 @@ class ContactItemsAdapter(private val context: Context, private val items: List<
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
+
+//        if (position % 2 == 0) {
+//            holder.itemView.setBackgroundColor(ContextCompat.getColor(context, android.R.color.darker_gray))
+//        } else {
+//            holder.itemView.setBackgroundColor(ContextCompat.getColor(context, android.R.color.white))
+//        }
 
         holder.nameField.text = item.name
         holder.phoneField.text = item.phoneNumber
